@@ -1,0 +1,863 @@
+/*Font Imports, 
+notice they are always included 
+at the start of the CSS document*/
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+/*Reset CSS*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*setting font family of most text to Roboto, as imported above*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+figcaption {
+  color: black;
+  text-align: right;
+  font-size: 0.5vw;
+  margin-right: 2.3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main h2 {
+  margin: 1vw 6vw;
+  font-size: 1.8rem;
+}
+
+/*--------------------
+Styling for navigation
+----------------------*/
+
+nav h1 {
+  text-align: center;
+  margin: 1em;
+  font-size: 1.7rem;
+}
+
+nav ul {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  margin: 0.5em;
+  font-size: 1rem;
+}
+
+nav ul li {
+  margin: 0em 1.5em;
+}
+
+nav li a:hover {
+  color: #f2694c;
+}
+
+.active a {
+  color: #f2694c;
+}
+
+/*-----------------------------------
+Styling for index.html main content
+------------------------------------*/
+
+.home_page {
+  user-select: none;
+  text-align: center;
+  align-content: center;
+}
+
+.top_title {
+  user-select: none;
+}
+
+.main_img {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 30em;
+  box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  position: absolute;
+  top: 6em;
+  width: 100%;
+  font-size: 3rem;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 1px 2px grey;
+}
+
+.title_explain {
+  position: absolute;
+  top: 23em;
+  color: gainsboro;
+  left: 10.5vw;
+  width: 73vw;
+  text-align: justify;
+  margin: 0em 1em;
+}
+
+.index_intro {
+  user-select: none;
+  padding: 2em 0em;
+  margin: 1em 1em 1em 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-items: center;
+  width: 90vw;
+}
+
+.second_img {
+  position: relative;
+  width: 80vw;
+  height: 52vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.index_margin {
+  margin-top: 1.2em;
+}
+
+.index_p {
+  margin: 1vw 6.1vw;
+  line-height: 1.5em;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.best_place {
+  user-select: none;
+  margin-top: 1.5em;
+}
+
+.third_img {
+  position: relative;
+  width: 86%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-----------------------------------
+Styling for about.html main content
+------------------------------------*/
+.about_me_detail {
+  text-align: left;
+  margin: 7vw;
+  border-bottom: 2px solid;
+  padding: 0vw 0vw 3vw 0vw;
+}
+
+.about_contact {
+  margin: 4vw 6vw;
+}
+
+.about_contact_header {
+  margin-top: 8vw;
+}
+
+.about_contact p {
+  margin-bottom: 7vw;
+}
+
+/*-----------------------------------
+Styling for breadcrumb content
+------------------------------------*/
+
+.breadcrumb_category {
+  position: absolute;
+  color: aliceblue;
+  top: 39%;
+  left: 15vw;
+  height: 2em;
+  width: 70vw;
+  font-size: 0.9rem;
+  text-shadow: 1px 2px grey;
+}
+
+.breadcrumb_location {
+  position: absolute;
+  color: aliceblue;
+  top: 38%;
+  left: 4.5vw;
+  height: 2em;
+  width: 91vw;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: ghostwhite;
+  padding: 0em 1em;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  position: relative;
+}
+
+.breadcrumb li + li::before {
+  content: ">";
+}
+
+.breadcrumb [aria-current="page"] {
+  font-weight: bold;
+}
+
+/*-----------------------------------
+Styling for cafe.html main content
+------------------------------------*/
+
+.explain {
+  text-align: justify;
+  margin: 6vw 9vw;
+}
+
+.card {
+  height: 400px;
+  width: 340px;
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  margin: 30px 0px;
+}
+
+.card-header1 {
+  width: 100%;
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+  background-size: 100% 280px;
+  background-repeat: no-repeat;
+}
+
+.cafe_elune {
+  background-image: url("images/elune_cafe1.jpg");
+}
+
+.cafe_terrab {
+  background-image: url("images/terrab5.jpg");
+}
+
+.card-header-is_closed {
+  background-color: #f2695c;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  float: right;
+  margin: 11px 11px 0 0;
+  border-radius: 5%;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.card-cafe-name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card-cafe-name a:hover {
+  color: #f2695c;
+}
+
+.card-body-header {
+  line-height: 40px;
+  margin: 20px 30px 10px 30px;
+}
+
+.card-body-hashtag {
+  color: #2478ff;
+  font-style: italic;
+}
+
+.cafe_description {
+  margin: 0px 30px;
+}
+
+/*-----------------------------------
+Styling for restaurant.html main content
+------------------------------------*/
+.restaurant_hueblanc {
+  background-image: url("images/hueblan1.jpg");
+}
+
+.restaurant_uminam {
+  background-image: url("images/uminam1.jpg");
+}
+
+/*-----------------------------------
+Styling for hueblanc.html main content
+------------------------------------*/
+
+.menu_header {
+  font-size: 1.4rem;
+  text-align: left;
+  margin: 1em 3em 0em 2em;
+}
+
+.menu_card {
+  height: auto;
+  width: 280px;
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  margin: 15px 0px;
+}
+
+.card_menu_pic {
+  width: 100%;
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+  background-size: 100% 280px;
+  background-repeat: no-repeat;
+}
+
+.hueblanc_menu1 {
+  background-image: url("images/hueblan_menu1.jpg");
+}
+
+.hueblanc_menu2 {
+  background-image: url("images/hueblan2.jpg");
+}
+
+.hueblanc_menu3 {
+  background-image: url("images/hueblan3.jpg");
+}
+
+.hueblanc_menu4 {
+  background-image: url("images/hueblan4.jpg");
+}
+
+.card_menu_name {
+  font-size: 1.2rem;
+  margin: 0.5em 0em;
+}
+
+.loc_info_title {
+  font-size: 1.3rem;
+}
+
+.location_info {
+  text-align: left;
+  margin: 1em 3em 2em 3em;
+}
+
+.location_info h3 {
+  margin-bottom: 1em;
+}
+
+.location_info li {
+  line-height: 2em;
+}
+
+.loc_info_header {
+  font-weight: bold;
+}
+
+.loc_info_element {
+  border-bottom: 2px solid #757267;
+}
+
+.checked {
+  color: orange;
+}
+
+.map_header {
+  font-size: 1.3rem;
+  text-align: left;
+  margin: 1em 3em 1em 2.7em;
+}
+
+.map {
+  width: 77%;
+  height: 100%;
+  margin-bottom: 1em;
+}
+
+/*-----------------------------------
+Styling for uminam.html main content
+------------------------------------*/
+.uminam_menu1 {
+  background-image: url("images/uminam5.jpg");
+  background-size: 100% 220px;
+}
+
+.uminam_menu2 {
+  background-image: url("images/uminam4.jpg");
+  background-size: 100% 220px;
+}
+
+.uminam_menu3 {
+  background-image: url("images/uminam2.jpg");
+  background-size: 100% 240px;
+}
+
+.uminam_menu4 {
+  background-image: url("images/uminam3.jpg");
+  background-size: 100% 230px;
+}
+
+/*-----------------------------------
+Styling for elune.html main content
+------------------------------------*/
+.elune_menu1 {
+  background-image: url("images/elune2.jpg");
+  background-size: 100% 220px;
+}
+
+.elune_menu2 {
+  background-image: url("images/elune3.jpg");
+  background-size: 100% 230px;
+}
+
+.elune_menu3 {
+  background-image: url("images/elune4.jpg");
+}
+
+.elune_menu4 {
+  background-image: url("images/elune5.jpg");
+  background-size: 100% 220px;
+}
+
+/*-----------------------------------
+Styling for terrab.html main content
+------------------------------------*/
+.terrab_menu1 {
+  background-image: url("images/terrab1.jpg");
+}
+
+.terrab_menu2 {
+  background-image: url("images/terrab2.jpg");
+}
+
+.terrab_menu3 {
+  background-image: url("images/terrab3.jpg");
+}
+
+.terrab_menu4 {
+  background-image: url("images/terrab4.jpg");
+  background-size: 100% 220px;
+}
+
+/*--------------------
+Styling for footer
+----------------------*/
+
+footer {
+  background-color: #333333;
+  font-size: 3em;
+  padding: 1em 0em;
+  color: #f2e6da;
+}
+
+footer ul {
+  display: inline-block;
+  list-style: none;
+}
+
+footer ul li {
+  font-size: 0.9rem;
+  margin: 2vw 0vw;
+  color: #757267;
+}
+
+footer h2 {
+  user-select: none;
+  color: #f2e6da;
+  font-size: 1.3rem;
+  margin: 1vw 6vw;
+  margin-top: 4vw;
+  text-align: left;
+}
+
+footer nav a {
+  color: #757267;
+  margin: 0vw 6vw;
+}
+
+footer p {
+  color: #757267;
+  margin: 0vw 6vw;
+}
+
+footer span {
+  margin: 0vw 6vw;
+}
+
+footer .copyright {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/*-------------------------
+Styling for Tablet Size
+--------------------------*/
+@media (min-width: 768px) and (max-width: 1100px) {
+  /*--------------------
+    Styling for navigation
+    ----------------------*/
+
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    margin: 0em 2em;
+    font-size: 1.2rem;
+  }
+
+  /*-------------------------
+    Styling for index.html
+    --------------------------*/
+
+  .main_img {
+    width: 100%;
+    height: 42em;
+  }
+
+  .title {
+    top: 6.5em;
+    font-size: 4rem;
+  }
+
+  .title_explain {
+    top: 32em;
+  }
+
+  .index_intro {
+    display: flex;
+    margin: 1vw 10vw 4vw 10vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    width: 83vw;
+    padding: 0em;
+  }
+
+  .intro_description {
+    display: block;
+    text-align: left;
+  }
+
+  .index_p {
+    width: 35vw;
+    font-size: 1em;
+  }
+
+  .second_img {
+    display: flex;
+    width: 35vw;
+    height: 28vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .images {
+    display: flex;
+  }
+
+  figcaption {
+    margin-right: 1.5vw;
+  }
+
+  /*-----------------------------------
+    Styling for about.html main content
+    ------------------------------------*/
+
+  .about_me_detail {
+    text-align: left;
+    margin: 5vw 25vw;
+  }
+
+  .about_contact {
+    margin: 2vw 6vw;
+  }
+
+  .about_contact_header {
+    margin-top: 2vw;
+  }
+
+  .about_contact p {
+    margin-bottom: 2vw;
+  }
+
+  /*-----------------------------------
+    Styling for breadcrumbs content
+    ------------------------------------*/
+
+  .breadcrumb_category {
+    top: 54%;
+    left: 19vw;
+    width: 62vw;
+  }
+
+  .breadcrumb_location {
+    top: 54%;
+    left: 4.5vw;
+    width: 92vw;
+  }
+
+  /*-----------------------------------
+    Styling for category page content
+    ------------------------------------*/
+
+  .card {
+    margin: 30px 5px;
+  }
+
+  .explain {
+    margin: 1vw 11vw;
+  }
+
+  /*-----------------------------------
+    Styling for location page content
+    ------------------------------------*/
+
+  .menu_header {
+    text-align: left;
+    margin: 1em 3em 0em 1em;
+  }
+
+  .menu_card {
+    margin: 2vw 1vw;
+  }
+
+  .location_page {
+    padding: 0vw 1vw 0vw 1vw;
+  }
+
+  .info_and_map {
+    display: flex;
+  }
+
+  .map_header {
+    margin: 2vw 3vw 2vw 5vw;
+  }
+
+  .map {
+    width: 36vw;
+    height: 81%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  /*--------------------
+    Styling for footer
+    ----------------------*/
+
+  footer {
+    margin-top: 1.6em;
+  }
+}
+
+/*-------------------------
+Styling for Desktop Size
+--------------------------*/
+@media (min-width: 1101px) {
+  /*--------------------
+    Styling for navigation
+    ----------------------*/
+
+  nav h1 {
+    font-size: 2.4rem;
+  }
+
+  nav ul li {
+    margin: 0em 5em;
+    font-size: 1.2rem;
+  }
+
+  /*-------------------------
+    Styling for index.html
+    --------------------------*/
+
+  .main_img {
+    width: 100%;
+    height: 42em;
+  }
+
+  .title {
+    top: 6em;
+    width: 10em;
+    font-size: 4.5rem;
+  }
+
+  .title_explain {
+    top: 57%;
+    left: 5em;
+    width: 30em;
+  }
+
+  .index_intro {
+    display: flex;
+    margin: 1vw 10vw 4vw 8vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    width: 83vw;
+    padding: 0em;
+  }
+
+  .intro_description {
+    display: block;
+    text-align: left;
+    margin-left: 1vw;
+  }
+
+  .index_p {
+    width: 35vw;
+  }
+
+  .second_img {
+    display: flex;
+    width: 34.8vw;
+    height: 22vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .images {
+    display: flex;
+  }
+
+  figcaption {
+    margin-right: 1.8vw;
+  }
+
+  /*-----------------------------------
+    Styling for about.html main content
+    ------------------------------------*/
+
+  .about_me_detail {
+    text-align: left;
+    margin: 5vw 25vw;
+  }
+
+  .about_contact {
+    margin: 2vw 6vw;
+  }
+
+  .about_contact_header {
+    margin-top: 2vw;
+  }
+
+  .about_contact p {
+    margin-bottom: 2vw;
+  }
+
+  /*-----------------------------------
+    Styling for breadcrumbs content
+    ------------------------------------*/
+
+  .breadcrumb_category {
+    top: 57%;
+    left: 10em;
+    height: 2em;
+    width: 24em;
+    font-size: 1rem;
+  }
+
+  .breadcrumb_location {
+    top: 57%;
+    left: 11em;
+    height: 2em;
+    width: 24em;
+    font-size: 1rem;
+  }
+
+  .breadcrumb_cafe {
+    left: 10.5em;
+  }
+
+  /*-----------------------------------
+    Styling for category page content
+    ------------------------------------*/
+
+  .card {
+    margin: 30px 90px;
+  }
+
+  .explain {
+    margin: 1vw 26vw;
+  }
+
+  /*-----------------------------------
+    Styling for location page content
+    ------------------------------------*/
+
+  .menu_header {
+    text-align: left;
+    margin: 1em 3em 0em 1.2em;
+  }
+
+  .menu_card {
+    margin: 1.3vw 1vw;
+  }
+
+  .location_page {
+    padding: 0vw 15vw 0vw 15vw;
+  }
+
+  .info_and_map {
+    display: flex;
+  }
+
+  .map_header {
+    margin: 1vw 3vw 1vw 3vw;
+  }
+
+  .map {
+    width: 36vw;
+    height: 81%;
+    margin-left: 3vw;
+  }
+
+  .elune_map {
+    width: 34vw;
+  }
+
+  /*--------------------
+    Styling for footer
+    ----------------------*/
+
+  footer {
+    margin-top: 1.6em;
+  }
+
+  footer ul {
+    display: flex;
+    text-align: justify;
+    margin: 0vw 7vw;
+  }
+
+  footer h2 {
+    margin: 1vw 6vw;
+    margin-top: 4vw;
+  }
+
+  .footer_nav_header {
+    margin-left: 3vw;
+  }
+
+  footer nav {
+    display: flex;
+    margin-left: 2vw;
+  }
+
+  footer nav a {
+    margin: 0vw 1vw;
+  }
+
+  footer nav li {
+    margin-top: 1vw;
+  }
+}
